@@ -1,19 +1,22 @@
-import Header from "./componets/Header"
-import SalesCard from "./componets/SalesCard"
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Header from "./componets/Header";
+import SalesCard from "./componets/SalesCard";
 
 function App() {
-  return(
+  return (
     <>
-      <Header/>
+      <ToastContainer />
+      <Header />
       <main>
         <section id="seles">
-            <div className="dsmeta-container"/>
-              <SalesCard/>
-            <div/>
+          <div className="dsmeta-container" />
+          <SalesCard />
+          <div />
         </section>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
